@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Check dependency
         run: |
+          ls
           ldd ./libgl4es_114.so
           ldd ./libltw.so
           ldd ./libOSMesa.so

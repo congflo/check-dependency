@@ -9,8 +9,8 @@ jobs:
     name: Check .so file
     runs-on: ubuntu-latest
     steps:
-      - name: Show list files
-        run: ls
+      - name: Checkout Repository
+        uses: actions/checkout@main
 
       - name: Check dependency
         run: |

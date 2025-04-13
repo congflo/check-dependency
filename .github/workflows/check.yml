@@ -14,6 +14,6 @@ jobs:
 
       - name: Check dependency
         run: |
-          ldd ./libgl4es_114.so
-          ldd ./libltw.so
-          ldd ./libOSMesa.so
+          objdump ./libgl4es_114.so
+          objdump ./libltw.so
+          objdump ./libOSMesa.so

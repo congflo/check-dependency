@@ -1,0 +1,16 @@
+name: Check Dependency
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  build:
+    name: Check .so file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check dependency
+        run: |
+          ldd ./libgl4es_114.so
+          ldd ./libltw.so
+          ldd ./libOSMesa.so

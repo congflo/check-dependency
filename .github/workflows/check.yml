@@ -9,9 +9,11 @@ jobs:
     name: Check .so file
     runs-on: ubuntu-latest
     steps:
+      - name: Show list files
+        run: ls
+
       - name: Check dependency
         run: |
-          ls
           ldd ./libgl4es_114.so
           ldd ./libltw.so
           ldd ./libOSMesa.so
